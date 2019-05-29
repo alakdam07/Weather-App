@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather app</title>
+</head>
+<body>
+    <h1 class="headline">Alak's Weather App</h1>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div> 
+        </div>
+        <div class="content">
+            <div class="genetal-information">
+                <div class="status" data-status>Enter location</div>
+                <div class="location" data-location>To find the Weather</div>
+
+            </div>
+            <div class="detail-section">
+                <div class="deatil">
+                    <div class="title">Wind</div>
+                    <div class="value" data-wind>TBD</div>
+                    
+                </div>
+                <div class="deatil">
+                        <div class="title">Temperature</div>
+                        <div class="value" data-temperature>TBD</div>
+                        
+                    </div>
+                    <div class="deatil">
+                            <div class="title" >Precipitation</div>
+                            <div class="value" data-precipitation>TBD</div>
+                            
+                    </div>
+            </div>
+            <div class="city-search-container">
+                <input type="text" class="city-serach" data-city-search placeholder="Enter location">
+            </div>
+        </div>
+
+    </div>
+    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgKP4Jue6eczcXFvgfaCHJ7t22XISyiWQ&libraries=places"></script>
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+    <script defer src="script.js"></script>
+
+
+</body>
+</html>
