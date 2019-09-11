@@ -34,9 +34,10 @@ function setWeatherData(data, place){
 locationElement.textContent=place
 statusElement.textContent= data.summary
 precipitationElement.textContent= `${data.precipProbability * 100}%`
-windElement.textContent= data.windSpeed
+windElement.textContent= Math.floor(data.windSpeed)
 temperatureElement.textContent= Math.floor(data.temperature) 
 icon.set('icon', "clear-day")
 icon.play();
 
 }
+

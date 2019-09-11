@@ -23,3 +23,9 @@ body{
     left: 33%;
     top: 6%;
 }
+
+.date{
+    position: absolute;
+    top:75%;
+    left:42%;
+}
